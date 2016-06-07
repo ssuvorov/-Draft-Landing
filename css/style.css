@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .header:before,
@@ -32,8 +32,8 @@ p {
 /* common =================================================================== */
 
 .header {
-  background: #f3f3f3;
-  padding: 20px;
+  background: #f2f2f2;
+  padding: 10px 20px;
 }
 
 .logotype-wrap {
@@ -54,26 +54,28 @@ p {
   display: inline-block;
   vertical-align: top;
   float: right;
+  font-family: 'Raleway', sans-serif;
+  padding-right: 50px;
 }
 
 .nav-menu {
-  margin: 22px 0;
+  margin: 18px 0;
 }
 
 .nav-menu li {
-  margin: 0 50px;
+  padding: 5px 20px;
 }
 
 .nav-menu a {
-  color: #ffa500;
+  color: #f2a10e;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 1024px) {
   .nav-menu li {
-    margin: 0;
-    padding: 5px 0;
+  margin: 0;
   }
 
   .nav-menu a {
@@ -103,6 +105,7 @@ p {
 @media only screen and (max-width: 767px) {
   .about-preview {
     min-width: 100%;
+    float: none;
   }
 }
 
@@ -113,13 +116,22 @@ p {
 }
 
 .about {
-  padding: 20px;
-  background: #ffa500;
+  padding: 40px 20px;
+  background: #f2a10e;
   color: #fff;
 }
 
 .about-body {
   margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.about-body:last-child {
+  margin-bottom: 0;
+}
+
+.about-text {
+  margin: 10px 0;
 }
 
 .about-extra {
@@ -134,23 +146,22 @@ p {
 @media only screen and (max-width: 1024px) {
   .about-extra img {
     float: none;
+    display: block;
+    margin: 0 auto;
   }
 }
 
 .subscribe {
-  padding: 20px 0;
-  background: #f3f3f3;
+  padding: 10px 10px 20px;
+  background: #f2f2f2;
   text-align: center;
-  color: #ffa500;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-}
-
-.subscribe p {
+  color: #f2a10e;
+  border-top: 1px solid #ffc000;
+  border-bottom: 1px solid #ffc000;
 }
 
 .subscribe input {
-  padding: 7px 10px;
+  padding: 10px 13px;
   color: #999;
 }
 
@@ -161,72 +172,135 @@ p {
 }
 
 .technology-inner {
-  margin-left: 40%;
-  background: rgba(255, 255, 255, .25);
+  margin-left: 35%;
+  background: rgba(255, 255, 255, .75);
   padding: 20px;
 }
 
 .technology {
   background: url('http://placehold.it/1200x800/C8C8C8') 50% 50%;
   background-size: cover;
+  border-bottom: 1px solid #ffc000;
 }
 
+.technology-description,
 .how-it-works {
   text-align: center;
   background: #fff;
-  color: #ffa500;
+  color: #f2a10e;
   padding: 60px 10px;
+}
+
+.how-list {
+  position: relative;
+  display: inline-block;
+  margin: 60px 0;
+  color: #3c3c3c;
+}
+
+.how-list:before {
+  content: '';
+  display: block;
+  position: relative;
+  top: 74px;
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 1px;
+  border-top: 1px dashed #999;
+}
+
+.how-list__item {
+  padding: 0 20px;
+  position: relative;
+  max-width: 350px;
+  width: 32%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.how-list__item:first-child {
+  padding-left: 0;
+}
+
+.how-list__item:last-child {
+  padding-right: 0;
 }
 
 .subscribe-header {
   text-transform: uppercase;
-  font-size: 26px;
-  margin: 0 0 20px 0;
+  font-size: 32px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.subscribe-text {
+  margin: 0 0 20px;
+  font-size: 18px;
 }
 
 .email-input {
   width: 300px;
-  border: 1px solid #999;
+  border: 1px solid #d9d9d9;
 }
 
 .technology-header {
-  color: #ffa500;
-  font-size: 42px;
-  font-weight: normal;
+  color: #f2a10e;
+  font-size: 52px;
+  margin: 0 0 40px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
 }
 
 .technologies {
   list-style: none;
   padding: 0;
+  line-height: 2;
+  color: #737572;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.number {
+  color: #f2a10e;
+  margin-right: 20px;
+  margin-left: 5px;
 }
 
 .technology-list {
   list-style: none;
+  color: #737572;
 }
 
 .technology-list li {
   padding: 0 10px;
   text-align: center;
+  max-width: 180px;
 }
 
 .how-it-works__title {
   text-transform: uppercase;
-  font-weight: normal;
-  font-size: 36px;
-  margin: 0 0 10px;
+  font-weight: 300;
+  font-size: 38px;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .how-it-works__image {
-  margin: 50px 0 100px;
+  margin: 50px 0 80px;
   max-width: 100%;
 }
 
 .lead {
   margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
 }
 
 .works {
-  background: #ffa500;
+  background: #f2a10e;
   padding: 0 10px 20px;
   text-align: center;
 }
@@ -240,17 +314,17 @@ p {
 
 .work-list li {
   padding: 0 5px;
-  color: #000;
+  color: #3c3c3c;
   width: 19%;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 350px;
 }
 
+.how-item,
 .work-item {
   display: inline-block;
-  border: 4px solid #fff;
 
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -260,6 +334,11 @@ p {
   box-shadow: 1px 1px 0 rgba(0, 0, 0, .15);
 }
 
+.work-item {
+  border: 4px solid #f2f2f2;
+}
+
+.how-title,
 .works-title {
   margin: 10px 0 5px;
 }
@@ -269,13 +348,23 @@ p {
   margin: 0;
 }
 
+@media only screen and (max-width: 1025px) {
+  .how-list {
+    margin: 20px 0;
+  }
+
+  .how-list__item {
+    padding: 0 10px 20px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .how-it-works__title {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .lead {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .header {
@@ -285,6 +374,7 @@ p {
   .navigation {
     float: none;
     display: block;
+    padding-right: 0;
   }
 
   .work-list li {
@@ -295,14 +385,14 @@ p {
   .list-inline__item {
     display: block;
     width: 100%;
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0 auto 40px;
   }
 
   .email-input {
-    width: 150px;
+    width: 170px;
   }
 
   .technologies {
@@ -315,24 +405,46 @@ p {
 
   .technology-header {
     font-size: 18px;
+    margin: 10px 0;
   }
 }
 
 .about-header {
   text-transform: uppercase;
+  font-size: 28px;
+  margin: 0;
 }
 
 .technology-items__title {
-    margin: 0 0 10px 0;
-    font-size: 14px;
+  margin: 0 0 10px 0;
+  font-size: 16px;
 }
 
 .technology-items {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .technology-items__text {
-    margin: 0;
-    font-size: 12px;
-    text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.footer {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f2a10e;
+  color: #fff;
+  font-size: 54px;
+}
+
+.how-title {
+  display: block;
+  min-height: 50px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .footer {
+    font-size: 32px;
+  }
 }
