@@ -40,7 +40,8 @@ p {
   display: inline-block;
   overflow: hidden;
   width: 200px;
-  height: 65px;
+  height: 42px;
+  margin-top: 12px;
 }
 
 .site-name {
@@ -86,11 +87,10 @@ p {
 .about-preview {
   position: relative;
   float: left;
-  padding: 0 20px 20px;
+  padding: 0 40px 20px;
   width: 41%;
   text-align: center;
   min-width: 320px;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -173,12 +173,12 @@ p {
 
 .technology-inner {
   margin-left: 35%;
-  background: rgba(255, 255, 255, .75);
+  background: rgba(255, 255, 255, .9);
   padding: 20px;
 }
 
 .technology {
-  background: url('http://placehold.it/1200x800/C8C8C8') 50% 50%;
+  background: url('../img/runner.png') 0% 50%;
   background-size: cover;
   border-bottom: 1px solid #ffc000;
 }
@@ -335,7 +335,6 @@ p {
 }
 
 .work-item {
-  border: 4px solid #f2f2f2;
 }
 
 .how-title,
