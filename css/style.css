@@ -109,7 +109,8 @@ p {
   }
 }
 
-.about-preview img {
+.about-preview-image {
+  position: relative;
   margin-top: 40px;
   max-width: 100%;
   display: inline-block;

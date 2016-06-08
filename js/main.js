@@ -1,3 +1,4 @@
+// menu animation
 (function() {
   var menu = document.getElementById('nav-menu');
 
@@ -10,5 +11,10 @@
     evt.preventDefault();
     window.scrollToElement(block, 0);
   });
+
+})();
+
+// animations
+(function() {
 
 })();
