@@ -160,12 +160,44 @@ p {
   border-bottom: 1px solid #ffc000;
 }
 
-.subscribe input {
+.subscribe input,
+.send_button {
   padding: 10px 13px;
   color: #999;
 }
 
-.subscribe input[type="submit"] {
+.subscribe-header {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.subscribe-text {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+.email-input-wrapper {
+  display: inline-block;
+  width: 300px;
+  margin: 0 10px 0 0;
+}
+
+.email-input {
+  width: 272px;
+  border: 1px solid #d9d9d9;
+}
+
+.submit_container {
+  display: inline-block;
+}
+
+.send_button {
+  display: inline-block;
+}
+
+.subscribe button[type="submit"] {
   background: green;
   color: #fff;
   border: none;
@@ -225,23 +257,6 @@ p {
 
 .how-list__item:last-child {
   padding-right: 0;
-}
-
-.subscribe-header {
-  text-transform: uppercase;
-  font-size: 32px;
-  margin: 0;
-  font-weight: normal;
-}
-
-.subscribe-text {
-  margin: 0 0 20px;
-  font-size: 18px;
-}
-
-.email-input {
-  width: 300px;
-  border: 1px solid #d9d9d9;
 }
 
 .technology-header {
@@ -388,6 +403,10 @@ p {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto 40px;
+  }
+
+  .email-input-wrapper {
+    width: 195px;
   }
 
   .email-input {
